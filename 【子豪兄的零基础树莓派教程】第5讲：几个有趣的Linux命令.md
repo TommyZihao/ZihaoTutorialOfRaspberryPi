@@ -1,4 +1,4 @@
-# 【子豪兄的零基础树莓派教程】第5讲：几个有趣的Linux命令
+# 【子豪兄的零基础树莓派教程】第5讲：23个有趣的Linux命令
 
 >【子豪兄的零基础树莓派教程】第5讲：
 >
@@ -8,6 +8,8 @@
 >
 >源代码、更新、勘误，请看本教程Github代码仓库：
 >https://github.com/TommyZihao/ZihaoTutorialOfRaspberryPi
+>
+>[同济大学开源镜像站](https://mirrors.tongji.edu.cn/)
 
 
 
