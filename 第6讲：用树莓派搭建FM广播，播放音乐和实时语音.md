@@ -18,6 +18,16 @@
 
 ![广播台](https://upload-images.jianshu.io/upload_images/13714448-9df47671e18e9812.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+
+
+-   [材料准备](#材料准备)
+-   [安装配置](#安装配置)
+-   [广播内置歌曲：星球大战](#广播内置歌曲星球大战)
+-   [广播实时语音](#广播实时语音)
+-   [扩展应用](#扩展应用)
+-   [声明](#声明)
+-   [扩展阅读与参考文献](#扩展阅读与参考文献)
+
 # 材料准备
 
 - 树莓派3B或树莓派3B+
@@ -36,7 +46,8 @@
 
 # 安装配置
 
-在树莓派的命令行界面运行以下八条命令
+
+在树莓派的命令行界面依次运行以下八条命令
 
 ```shell
 mkdir fm
@@ -56,19 +67,31 @@ sudo make
 sudo apt-get install sox
 ```
 
-# 广播内置歌曲：星球大战
-
-运行以下命令，即可在调频100.6MHz频道广播自带的星球大战主题曲：
+# 广播内置歌曲：吉他音乐
 
 ```shell
+sox acoustic_guitar_duet.wav -r 22050 -c 1 -b 16 -t wav - | sudo ./fm_transmitter -f 100.6 -
+```
+
+>也可以把这条命令中的100.6改成其它数字，即可在新频道上广播。不要和已有电台频率冲突。
+>
+>也可以将你自己的wav格式的声音文件放到/fm/fm_transmitter文件夹中，替换命令中的star_wars.wav文件。
+>
+>WAV是最接近无损的音乐格式，所以文件也比较大。
+
+
+
+# 广播歌曲：星球大战
+
+```shell
+sudo git reset --hard 71e7e23a0e
+
 sox star_wars.wav -r 22050 -c 1 -b 16 -t wav - | sudo ./fm_transmitter -f 100.6 -
 ```
 
 按`ctrl`+`c`结束广播。
 
-> 也可以把这条命令中的100.6改成其它数字，即可在新频道上广播。不要和已有电台频率冲突。
->
-> 也可以将你自己的wav格式的声音文件放到/fm/fm_transmitter文件夹中，替换命令中的star_wars.wav文件
+
 
 # 广播实时语音
 
