@@ -17,3 +17,5 @@
 > [重庆大学树莓派爱好者俱乐部](www.maxoyed.com)          
 >
 > [西南AI爱好者联盟](http://www.qingxzd.com/)
+
+![微信扫码支持子豪兄制作树莓派教程](https://upload-images.jianshu.io/upload_images/13714448-4be7dc29e22207b4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
